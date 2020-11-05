@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name blinds-controller)(type Legacy)(uri ${KIPRJMOD}/blinds-controller.lib)(options "")(descr ""))
+)

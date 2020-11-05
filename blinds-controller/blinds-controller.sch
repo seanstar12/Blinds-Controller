@@ -1,0 +1,330 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:WeMos_D1_mini U2
+U 1 1 5F2DCDDB
+P 3850 4000
+F 0 "U2" H 3600 4900 50  0000 C CNN
+F 1 "WeMos_D1_mini" H 3850 2900 50  0000 C CNN
+F 2 "Module:WEMOS_D1_mini_light" H 3850 2850 50  0001 C CNN
+F 3 "https://wiki.wemos.cc/products:d1:d1_mini#documentation" H 2000 2850 50  0001 C CNN
+	1    3850 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5F2E8EA7
+P 3850 4800
+F 0 "#PWR0101" H 3850 4550 50  0001 C CNN
+F 1 "GND" H 3855 4627 50  0000 C CNN
+F 2 "" H 3850 4800 50  0001 C CNN
+F 3 "" H 3850 4800 50  0001 C CNN
+	1    3850 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L blinds-controller:MP1584EN-DC U1
+U 1 1 5F2F39EF
+P 2350 2350
+F 0 "U1" H 2350 2765 50  0000 C CNN
+F 1 "MP1584EN-DC" H 2350 2674 50  0000 C CNN
+F 2 "blinds-controller:MP1584EN-DC" H 2350 2673 50  0001 C CNN
+F 3 "" H 2250 2300 50  0001 C CNN
+	1    2350 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5F2F5BD4
+P 1600 2100
+F 0 "#PWR0102" H 1600 1850 50  0001 C CNN
+F 1 "GND" H 1605 1927 50  0000 C CNN
+F 2 "" H 1600 2100 50  0001 C CNN
+F 3 "" H 1600 2100 50  0001 C CNN
+	1    1600 2100
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+9V #PWR0103
+U 1 1 5F2F9107
+P 1600 2600
+F 0 "#PWR0103" H 1600 2450 50  0001 C CNN
+F 1 "+9V" H 1615 2773 50  0000 C CNN
+F 2 "" H 1600 2600 50  0001 C CNN
+F 3 "" H 1600 2600 50  0001 C CNN
+	1    1600 2600
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1600 2600 1600 2500
+Wire Wire Line
+	1600 2500 1800 2500
+Wire Wire Line
+	1600 2100 1600 2200
+Wire Wire Line
+	1600 2200 1800 2200
+Wire Wire Line
+	1800 2300 1600 2300
+Wire Wire Line
+	1600 2300 1600 2200
+Connection ~ 1600 2200
+Wire Wire Line
+	1800 2400 1600 2400
+Wire Wire Line
+	1600 2400 1600 2500
+Connection ~ 1600 2500
+$Comp
+L power:GND #PWR0104
+U 1 1 5F2FB54D
+P 3100 2100
+F 0 "#PWR0104" H 3100 1850 50  0001 C CNN
+F 1 "GND" H 3105 1927 50  0000 C CNN
+F 2 "" H 3100 2100 50  0001 C CNN
+F 3 "" H 3100 2100 50  0001 C CNN
+	1    3100 2100
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2900 2200 3100 2200
+Wire Wire Line
+	3100 2200 3100 2100
+Wire Wire Line
+	2900 2300 3100 2300
+Wire Wire Line
+	3100 2300 3100 2200
+Connection ~ 3100 2200
+Wire Wire Line
+	2900 2500 3100 2500
+Wire Wire Line
+	2900 2400 3100 2400
+Wire Wire Line
+	3100 2400 3100 2500
+$Comp
+L power:+9V #PWR0105
+U 1 1 5F30AA54
+P 6000 3250
+F 0 "#PWR0105" H 6000 3100 50  0001 C CNN
+F 1 "+9V" H 6015 3423 50  0000 C CNN
+F 2 "" H 6000 3250 50  0001 C CNN
+F 3 "" H 6000 3250 50  0001 C CNN
+	1    6000 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5F30BA95
+P 5750 4800
+F 0 "#PWR0106" H 5750 4550 50  0001 C CNN
+F 1 "GND" H 5755 4627 50  0000 C CNN
+F 2 "" H 5750 4800 50  0001 C CNN
+F 3 "" H 5750 4800 50  0001 C CNN
+	1    5750 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 4700 5750 4700
+Wire Wire Line
+	5750 4700 5750 4800
+Wire Wire Line
+	5800 4700 5750 4700
+Connection ~ 5750 4700
+Wire Wire Line
+	4250 3700 4800 3700
+Wire Wire Line
+	4800 3700 4800 4000
+Wire Wire Line
+	4800 4000 5300 4000
+Wire Wire Line
+	4800 4100 4800 4000
+Connection ~ 4800 4000
+Wire Wire Line
+	4250 4200 4900 4200
+Wire Wire Line
+	4900 4200 4900 4100
+Wire Wire Line
+	4900 4100 5300 4100
+Wire Wire Line
+	4250 4300 5000 4300
+Wire Wire Line
+	5000 4300 5000 3900
+Wire Wire Line
+	5000 3900 5300 3900
+Wire Wire Line
+	5300 3600 5000 3600
+Wire Wire Line
+	5000 3600 5000 3200
+Wire Wire Line
+	5000 3200 3950 3200
+Wire Wire Line
+	6100 3800 6950 3800
+Wire Wire Line
+	6100 3900 6450 3900
+Wire Wire Line
+	6450 3900 6450 4000
+Wire Wire Line
+	6450 4000 6950 4000
+Wire Wire Line
+	6100 4100 6550 4100
+Wire Wire Line
+	6550 4100 6550 3900
+Wire Wire Line
+	6550 3900 6950 3900
+Wire Wire Line
+	6100 4200 6650 4200
+Wire Wire Line
+	6650 4200 6650 4100
+Wire Wire Line
+	6650 4100 6950 4100
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 5F327C3E
+P 7150 2600
+F 0 "J2" H 7230 2592 50  0000 L CNN
+F 1 "AUX_2" H 7230 2501 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7150 2600 50  0001 C CNN
+F 3 "~" H 7150 2600 50  0001 C CNN
+	1    7150 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 5F328E97
+P 7150 1850
+F 0 "J1" H 7230 1842 50  0000 L CNN
+F 1 "AUX_1" H 7230 1751 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7150 1850 50  0001 C CNN
+F 3 "~" H 7150 1850 50  0001 C CNN
+	1    7150 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2500 3100 3200
+Wire Wire Line
+	3100 3200 3750 3200
+Connection ~ 3100 2500
+Wire Wire Line
+	3100 2500 3700 2500
+Wire Wire Line
+	3700 2500 3700 1750
+Wire Wire Line
+	3700 1750 6950 1750
+Wire Wire Line
+	3700 2500 6950 2500
+Connection ~ 3700 2500
+Wire Wire Line
+	3950 3200 3950 2600
+Wire Wire Line
+	3950 2600 6950 2600
+Connection ~ 3950 3200
+Wire Wire Line
+	3950 2600 3950 1850
+Wire Wire Line
+	3950 1850 6950 1850
+Connection ~ 3950 2600
+$Comp
+L power:GND #PWR0107
+U 1 1 5F369057
+P 6950 2050
+F 0 "#PWR0107" H 6950 1800 50  0001 C CNN
+F 1 "GND" H 6955 1877 50  0000 C CNN
+F 2 "" H 6950 2050 50  0001 C CNN
+F 3 "" H 6950 2050 50  0001 C CNN
+	1    6950 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5F369E7C
+P 6950 2800
+F 0 "#PWR0108" H 6950 2550 50  0001 C CNN
+F 1 "GND" H 6955 2627 50  0000 C CNN
+F 2 "" H 6950 2800 50  0001 C CNN
+F 3 "" H 6950 2800 50  0001 C CNN
+	1    6950 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J3
+U 1 1 5F36BB98
+P 7150 3900
+F 0 "J3" H 7230 3892 50  0000 L CNN
+F 1 "STEP" H 7230 3801 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7150 3900 50  0001 C CNN
+F 3 "~" H 7150 3900 50  0001 C CNN
+	1    7150 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J4
+U 1 1 5F36DFE1
+P 950 2300
+F 0 "J4" H 950 2500 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 950 2700 50  0000 C CNN
+F 2 "TerminalBlock_Altech:Altech_AK300_1x02_P5.00mm_45-Degree" H 950 2300 50  0001 C CNN
+F 3 "~" H 950 2300 50  0001 C CNN
+	1    950  2300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 2300 1600 2300
+Connection ~ 1600 2300
+Wire Wire Line
+	1150 2400 1600 2400
+Connection ~ 1600 2400
+Wire Wire Line
+	4750 4000 4750 2700
+Wire Wire Line
+	4250 4100 4800 4100
+Wire Wire Line
+	4750 2700 6950 2700
+Wire Wire Line
+	4250 4000 4750 4000
+Wire Wire Line
+	4700 3900 4700 1950
+Wire Wire Line
+	4700 1950 6950 1950
+Wire Wire Line
+	4250 3900 4700 3900
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5F445556
+P 1200 3600
+F 0 "H1" H 1300 3691 50  0000 L CNN
+F 1 "MountingHole" H 1300 3600 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 1300 3509 50  0000 L CNN
+F 3 "~" H 1200 3600 50  0001 C CNN
+	1    1200 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3700 5300 3600
+$Comp
+L blinds-controller:DRV8825 A1
+U 1 1 5F449F07
+P 5700 3900
+F 0 "A1" H 5700 4681 50  0000 C CNN
+F 1 "DRV8825" H 5700 4590 50  0000 C CNN
+F 2 "blinds-controller:DRV8825" H 5700 4589 50  0001 C CNN
+F 3 "https://www.pololu.com/product/2982" H 5800 3600 50  0001 C CNN
+	1    5700 3900
+	1    0    0    -1  
+$EndComp
+Connection ~ 5300 3600
+Wire Wire Line
+	5700 3300 6000 3300
+Wire Wire Line
+	6000 3300 6000 3250
+$EndSCHEMATC
